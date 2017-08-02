@@ -3,7 +3,7 @@
   version: "0.1"
   description: "Guacamole"
   uuid: guacamole-0
-  minimum_rancher_version: v0.51.0
+  minimum_rancher_version: v1.2.0
 questions:
     - variable: "password"
         label: "MySQL Password"
