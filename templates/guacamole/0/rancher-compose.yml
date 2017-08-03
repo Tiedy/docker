@@ -28,10 +28,12 @@ catalog:
       label: "DNS Server"
       description: "Your DNS Server"
       required: false
+      default: "8.8.8.8"
       type: "string"
     - variable: "DNS_SEARCH"
       label: "DNS Search Domain"
       description: "Your DNS Search Domain"
       required: false
+      default: ""
       type: "string"
 guacamole:
