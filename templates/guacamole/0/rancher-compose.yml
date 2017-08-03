@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 catalog:
   name: "Guacamole"
   version: "v1.0"
@@ -35,8 +35,3 @@ catalog:
       required: false
       type: "string"
 guacamole:
-  scale: 1
-guacd:
-  scale: 1
-mysql:
-  scale: 1
