@@ -1,9 +1,9 @@
 .catalog:
-  name: "Guacamole"
-  version: "v0.1"
-  description: "Guacamole"
-  uuid: guacamole-0
-  minimum_rancher_version: v1.2.0
+    name: "Guacamole"
+    version: "v0.1"
+    description: "Guacamole"
+    uuid: guacamole-0
+    minimum_rancher_version: v1.2.0
 questions:
     - variable: "password"
         label: "MySQL Password"
