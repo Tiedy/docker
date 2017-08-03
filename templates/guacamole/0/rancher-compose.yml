@@ -36,4 +36,10 @@ catalog:
       required: false
       default: " "
       type: "string"
+    - variable: "GUACAMOLE_PORT"
+      label: "Guacamole Port"
+      description: "default 8080"
+      required: true
+      default: "8080"
+      type: "string"
 guacamole:
