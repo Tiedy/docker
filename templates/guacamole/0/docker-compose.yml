@@ -1,7 +1,7 @@
 mysql:
   image: mysql
   environment:
-    MYSQL_ROOT_PASSWORD: ${password}
+    MYSQL_ROOT_PASSWORD: ${PASSWORD_DB}
   ports:
     - 3306:3306
   dns: ${dnsserver}
@@ -17,7 +17,7 @@ guacamole:
   environment:
     MYSQL_DATABASE: ${db}
     MYSQL_USER: ${db_user}
-    MYSQL_PASSWORD: ${password}
+    MYSQL_PASSWORD: ${PASSWORD_DB}
   links:
     - guacd:guacd
     - mysql:mysql
