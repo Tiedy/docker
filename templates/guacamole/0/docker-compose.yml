@@ -21,5 +21,7 @@ guacamole:
   links:
     - guacd:guacd
     - mysql:mysql
+  ports:
+    - 8080:8080
   dns: ${dnsserver}
   dns_search: ${dnssearch}
