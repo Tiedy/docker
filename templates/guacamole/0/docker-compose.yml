@@ -18,7 +18,7 @@ services:
       - MYSQL_PASSWORD=${PASSWORD_DB}
     links:
       - guacd:guacd
-      - mysql:tiedy/guacamolemysql
+      - mysql:mysql
     ports:
       - ${GUACAMOLE_PORT}:8080
     dns: ${DNS_SERVER}
