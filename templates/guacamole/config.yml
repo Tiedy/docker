@@ -1,4 +1,4 @@
-name: Guacamole
-description: Guacamole
-version: v0.1
-category: RDP
+name: "Guacamole"
+version: "v0.1"
+description: "Guacamole"
+category: "RDP"
