@@ -4,24 +4,24 @@ mysql:
     - MYSQL_ROOT_PASSWORD=${PASSWORD_DB}
   ports:
     - 3306:3306
-  dns: ${dnsserver}
-  dns_search: ${dnssearch}
+#  dns: ${DNS_SERVER}
+  dns_search: ${DNS_SEARCH}
 guacd:
   image: guacamole/guacd
   ports:
     - 4822:4822
-  dns: ${dnsserver}
-  dns_search: ${dnssearch}
+#  dns: ${DNS_SERVER}
+  dns_search: ${DNS_SEARCH}
 guacamole:
   image: guacamole/guacamole
   environment:
-    - MYSQL_DATABASE=${db}
-    - MYSQL_USER=${db_user}
+    - MYSQL_DATABASE=${NAME_DB}
+    - MYSQL_USER=${USER_DB}
     - MYSQL_PASSWORD=${PASSWORD_DB}
   links:
     - guacd:guacd
     - mysql:mysql
   ports:
     - 8080:8080
-  dns: ${dnsserver}
-  dns_search: ${dnssearch}
+#  dns: ${DNS_SERVER}
+  dns_search: ${DNS_SEARCH}

@@ -12,24 +12,24 @@ catalog:
       required: true
       default: "Password1"
       type: "string"
-    - variable: "db"
+    - variable: "NAME_DB"
       label: "Database Name"
       description: "Your Database name"
       required: true
       default: "guacamole_db"
       type: "string"
-    - variable: "db_user"
+    - variable: "USER_DB"
       label: "Database User"
       description: "Your Database User"
       required: true
       default: "guacamole"
       type: "string"
-    - variable: "dnsserver"
+    - variable: "DNS_SERVER"
       label: "DNS Server"
       description: "Your DNS Server"
       required: false
       type: "string"
-    - variable: "dnssearch"
+    - variable: "DNS_SEARCH"
       label: "DNS Search Domain"
       description: "Your DNS Search Domain"
       required: false
