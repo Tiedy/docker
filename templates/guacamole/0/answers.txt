@@ -1,5 +1,0 @@
-password=Password1
-db=guacamole_db
-db_user=guacamole
-dnssearch=
-dnsserver=

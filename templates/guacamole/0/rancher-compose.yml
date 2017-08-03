@@ -8,26 +8,29 @@ questions:
   - variable: "password"
     label: "MySQL Password"
     description: "Your mysql Password"
-    required: false
+    required: true
+    default: "Password1"
     type: "string"
   - variable: "db"
     label: "Database Name"
     description: "Your Database name"
-    required: false
+    required: true
+    default: "guacamole_db"
     type: "string"
   - variable: "db_user"
     label: "Database User"
     description: "Your Database User"
-    required: false
+    required: true
+    default: "guacamole"
     type: "string"
   - variable: "dnsserver"
     label: "DNS Server"
     description: "Your DNS Server"
-    required: false
+    required: true
     type: "string"
   - variable: "dnssearch"
     label: "DNS Search Domain"
     description: "Your DNS Search Domain"
-    required: false
+    required: true
     type: "string"
 guacamole:
