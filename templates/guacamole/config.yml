@@ -1,4 +1,5 @@
 name: Guacamole
-description: Guacamole
-version: v0.1
+description: |
+  Guacamole 4 RDP
+version: v1.0
 category: RDP
