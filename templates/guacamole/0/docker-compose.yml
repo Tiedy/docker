@@ -7,11 +7,11 @@ mysql:
   dns: ${dnsserver}
   dns_search: ${dnssearch}
 guacd:
-    image: guacamole/guacd
-    ports:
-      -4822:4822
-    dns: ${dnsserver}
-    dns_search: ${dnssearch}
+  image: guacamole/guacd
+  ports:
+    -4822:4822
+  dns: ${dnsserver}
+  dns_search: ${dnssearch}
 guacamole:
   image: guacamole/guacamole
   environment:
