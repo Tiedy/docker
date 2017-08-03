@@ -9,7 +9,7 @@ mysql:
 guacd:
   image: guacamole/guacd
   ports:
-    -4822:4822
+    - 4822:4822
   dns: ${dnsserver}
   dns_search: ${dnssearch}
 guacamole:
