@@ -1,4 +1,5 @@
-.catalog:
+version: '2'
+catalog:
   name: "Guacamole"
   version: "v1.0"
   description: "Guacamole 4 RDP"
