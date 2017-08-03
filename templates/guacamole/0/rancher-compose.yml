@@ -34,6 +34,6 @@ catalog:
       label: "DNS Search Domain"
       description: "Your DNS Search Domain"
       required: false
-      default: ""
+      default: " "
       type: "string"
 guacamole:
