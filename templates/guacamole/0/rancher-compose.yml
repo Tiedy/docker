@@ -26,12 +26,12 @@
     - variable: "dnsserver"
       label: "DNS Server"
       description: "Your DNS Server"
-      required: true
+      required: false
       type: "string"
     - variable: "dnssearch"
       label: "DNS Search Domain"
       description: "Your DNS Search Domain"
-      required: true
+      required: false
       type: "string"
 guacamole:
   scale: 1
