@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    image: mysql
+    image: tiedy/guacamolemysql
     environment:
       - MYSQL_ROOT_PASSWORD=${PASSWORD_DB}
     dns: ${DNS_SERVER}
@@ -18,7 +18,7 @@ services:
       - MYSQL_PASSWORD=${PASSWORD_DB}
     links:
       - guacd:guacd
-      - mysql:mysql
+      - mysql:tiedy/guacamolemysql
     ports:
       - ${GUACAMOLE_PORT}:8080
     dns: ${DNS_SERVER}
