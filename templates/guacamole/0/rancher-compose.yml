@@ -27,7 +27,7 @@ catalog:
     - variable: "DNS_SERVER"
       label: "DNS Server"
       description: "Your DNS Server"
-      required: false
+      required: true
       default: "8.8.8.8"
       type: "string"
     - variable: "DNS_SEARCH"
