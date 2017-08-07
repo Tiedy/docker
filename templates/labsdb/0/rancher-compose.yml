@@ -2,7 +2,7 @@ version: '2'
 catalog:
   name: "Labsdb"
   version: "v1.0"
-  description: "LABS DB"
+  description: "Labs DB"
   uuid: labsdb-1
   minimum_rancher_version: v1.2.0
   questions:
