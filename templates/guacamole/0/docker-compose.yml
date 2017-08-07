@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    image: tiedy/mysqlguacamole
+    image: tiedy/mysqlguac
     environment:
       - MYSQL_ROOT_PASSWORD=${PASSWORD_DB}
     dns: ${DNS_SERVER}
