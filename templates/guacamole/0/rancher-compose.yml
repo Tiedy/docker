@@ -54,7 +54,6 @@ catalog:
       options: # List of options if using type of `enum`
         - mysql
         - tiedy/mysqlguac
-        - ttiedemann/builds
       required: true
       default: "mysql"
       type: "enum"
