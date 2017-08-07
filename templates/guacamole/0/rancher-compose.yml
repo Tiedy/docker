@@ -42,4 +42,10 @@ catalog:
       required: true
       default: "8080"
       type: "string"
+    - variable: "BOOLEAN1"
+      label: "BOOLEAN1"
+      description: "default 8080"
+      required: true
+      default: "false"
+      type: "boolean"
 guacamole:
