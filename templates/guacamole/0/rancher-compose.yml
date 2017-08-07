@@ -45,7 +45,10 @@ catalog:
     - variable: "BOOLEAN1"
       label: "BOOLEAN1"
       description: "default 8080"
+      options: # List of options if using type of `enum`
+        - Option 1
+        - Option 2
       required: true
       default: "false"
-      type: "boolean"
+      type: "enum"
 guacamole:
