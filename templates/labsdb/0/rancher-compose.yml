@@ -6,7 +6,6 @@ catalog:
   uuid: labsdb-1
   minimum_rancher_version: v1.2.0
   questions:
-
     - variable: "DBIMAGE"
       label: "DB Image"
       description: "Select some Image"
