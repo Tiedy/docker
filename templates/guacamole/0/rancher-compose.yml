@@ -12,43 +12,50 @@ catalog:
       required: true
       default: "Password1"
       type: "string"
+
     - variable: "NAME_DB"
       label: "Database Name"
       description: "Your Database name"
       required: true
       default: "guacamole_db"
       type: "string"
+
     - variable: "USER_DB"
       label: "Database User"
       description: "Your Database User"
       required: true
       default: "guacamole"
       type: "string"
+
     - variable: "DNS_SERVER"
       label: "DNS Server"
       description: "Your DNS Server"
       required: true
       default: "8.8.8.8"
       type: "string"
+
     - variable: "DNS_SEARCH"
       label: "DNS Search Domain"
       description: "Your DNS Search Domain"
       required: false
       default: " "
       type: "string"
+
     - variable: "GUACAMOLE_PORT"
       label: "Guacamole Port"
       description: "default 8080"
       required: true
       default: "8080"
       type: "string"
-    - variable: "BOOLEAN1"
-      label: "BOOLEAN1"
-      description: "default 8080"
+
+    - variable: "MYSQLIMAGE"
+      label: "MySQL Image"
+      description: "mysql is a new Default-mysql-Server. | tiedy/mysqlguac is a Guacamole-mysql-Server with Rancher default Parameters. "
       options: # List of options if using type of `enum`
-        - Option 1
-        - Option 2
+        - mysql
+        - tiedy/mysqlguac
       required: true
-      default: "false"
+      default: "mysql"
       type: "enum"
+
 guacamole:
