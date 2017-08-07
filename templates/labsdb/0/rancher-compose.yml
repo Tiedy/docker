@@ -18,21 +18,21 @@ catalog:
       type: "enum"
 
     - variable: "PORT1433"
-      label: "Port 1433"
+      label: "Port 1433 für MsSQL"
       description: "Port 1433"
       required: true
       default: "14330"
       type: "int"
 
     - variable: "PORT22"
-      label: "Port 22"
+      label: "Port 22 für Oracle"
       description: "Port 22"
       required: true
       default: "2020"
       type: "int"
 
     - variable: "PORT1521"
-      label: "Port 1433"
+      label: "Port 1521 für Oracle"
       description: "Port 1521"
       required: true
       default: "15210"
