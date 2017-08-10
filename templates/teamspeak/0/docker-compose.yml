@@ -2,6 +2,7 @@ version: '2'
 services:
   teamspeakdb:
     image: mariadb
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
@@ -9,9 +10,12 @@ services:
     #  - MYSQL_PASSWORD=${DB_ROOT_PASSWORD}
     ports:
       - ${PORT3306}:3306
+    net:
+    - teamspeaknet
 
   teamspeak:
     image: solidnerd/teamspeak
+    restart: always
     environment:
       - TS3_MARIADB_DB=${DB_NAME}
       - TS3_MARIADB_USER=${DB_USER}
@@ -22,5 +26,7 @@ services:
       - ${PORT9987}:9987/udp
       - ${PORT10011}:10011
       - ${PORT30033}:30033
+    net:
+    - teamspeaknet
     links:
       - teamspeakdb:teamspeakdb
