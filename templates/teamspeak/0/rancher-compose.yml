@@ -33,8 +33,8 @@ catalog:
       type: "password"
 
     - variable: "DB_HOST"
-      label: "DB Name"
-      description: "DB Name"
+      label: "DB Host"
+      description: "DB Host"
       required: false
       default: ""
       type: "string"
