@@ -1,0 +1,70 @@
+version: '2'
+catalog:
+  name: "Teamspeak"
+  version: "v1.0"
+  description: "TS3 mit DB"
+  uuid: teamspeak-1
+  minimum_rancher_version: v1.2.0
+  questions:
+    - variable: "DB_ROOT_PASSWORD"
+      label: "DB Root Password"
+      description: "DB Root Password"
+      required: true
+      type: "password"
+
+    - variable: "DB_NAME"
+      label: "DB Name"
+      description: "DB Name"
+      required: true
+      default: "teamspeak"
+      type: "string"
+
+    - variable: "DB_USER"
+      label: "DB Name"
+      description: "DB Name"
+      required: true
+      default: "teamspeak"
+      type: "string"
+
+    - variable: "DB_PASSWORD"
+      label: "DB Password"
+      description: "DB Password"
+      required: true
+      type: "password"
+
+    - variable: "DB_HOST"
+      label: "DB Name"
+      description: "DB Name"
+      required: false
+      default: ""
+      type: "string"
+
+    - variable: "PORT3306"
+      label: "Port 3306 für MySQL"
+      description: "Port 3306"
+      required: true
+      default: "3306"
+      type: "int"
+
+    - variable: "PORT9987"
+      label: "Port 9987 für TS"
+      description: "Port 9987"
+      required: true
+      default: "9987"
+      type: "int"
+
+    - variable: "PORT10011"
+      label: "Port 10011 für TS"
+      description: "Port 10011"
+      required: true
+      default: "10011"
+      type: "int"
+
+    - variable: "PORT30033"
+      label: "Port 30033 für TS"
+      description: "Port 30033"
+      required: true
+      default: "30033"
+      type: "int"
+
+labsdb:
