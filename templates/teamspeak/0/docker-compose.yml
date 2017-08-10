@@ -19,7 +19,7 @@ services:
     #  - TS3_MARIADB_HOST=${DB_HOST}
       - TS3_MARIADB_PORT=${DB_PORT}
     ports:
-      - ${PORT9987}:9987
+      - ${PORT9987}:9987/udp
       - ${PORT10011}:10011
       - ${PORT30033}:30033
     links:
