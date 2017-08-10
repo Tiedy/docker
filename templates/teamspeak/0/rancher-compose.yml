@@ -16,14 +16,14 @@ catalog:
       label: "DB Name"
       description: "DB Name"
       required: true
-      default: "teamspeak"
+      default: "TS3_DB_9987"
       type: "string"
 
     - variable: "DB_USER"
-      label: "DB Name"
-      description: "DB Name"
+      label: "DB User"
+      description: "DB User"
       required: true
-      default: "teamspeak"
+      default: "root"
       type: "string"
 
     - variable: "DB_PASSWORD"
@@ -36,7 +36,7 @@ catalog:
       label: "DB Host"
       description: "DB Host"
       required: false
-      default: ""
+      default: "mariadb"
       type: "string"
 
     - variable: "PORT3306"

@@ -24,8 +24,3 @@ services:
       - ${PORT30033}:30033
     links:
       - teamspeakdb:teamspeakdb
-
-networks:
-  default:
-    external:
-      name: teamspeaknetworks
