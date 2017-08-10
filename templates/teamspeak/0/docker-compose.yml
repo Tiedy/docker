@@ -10,8 +10,7 @@ services:
     #  - MYSQL_PASSWORD=${DB_ROOT_PASSWORD}
     ports:
       - ${PORT3306}:3306
-    net:
-    - teamspeaknet
+    net: teamspeaknet
 
   teamspeak:
     image: solidnerd/teamspeak
@@ -26,7 +25,6 @@ services:
       - ${PORT9987}:9987/udp
       - ${PORT10011}:10011
       - ${PORT30033}:30033
-    net:
-    - teamspeaknet
+    net: teamspeaknet
     links:
       - teamspeakdb:teamspeakdb
