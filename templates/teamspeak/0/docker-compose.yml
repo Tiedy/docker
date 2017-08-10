@@ -16,8 +16,8 @@ services:
       - TS3_MARIADB_DB=${DB_NAME}
       - TS3_MARIADB_USER=${DB_USER}
       - TS3_MARIADB_PASS=${DB_PASSWORD}
-      - TS3_MARIADB_HOST=${DB_HOST}
-      - S3_MARIADB_PORT=${DB_PORT}
+    #  - TS3_MARIADB_HOST=${DB_HOST}
+      #- S3_MARIADB_PORT=${DB_PORT}
     ports:
       - ${PORT9987}:9987
       - ${PORT10011}:10011
