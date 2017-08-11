@@ -6,46 +6,6 @@ catalog:
   uuid: teamspeak-1
   minimum_rancher_version: v1.2.0
   questions:
-    - variable: "DB_ROOT_PASSWORD"
-      label: "DB Root Password"
-      description: "DB Root Password"
-      required: true
-      type: "password"
-
-    - variable: "DB_NAME"
-      label: "DB Name"
-      description: "DB Name"
-      required: true
-      default: "TS3_DB_9987"
-      type: "string"
-
-    - variable: "DB_USER"
-      label: "DB User"
-      description: "DB User"
-      required: true
-      default: "root"
-      type: "string"
-
-    - variable: "DB_PASSWORD"
-      label: "DB Password"
-      description: "DB Password"
-      required: true
-      type: "password"
-
-    - variable: "DB_HOST"
-      label: "DB Host"
-      description: "DB Host"
-      required: false
-      default: "mysql"
-      type: "string"
-
-    - variable: "PORT3306"
-      label: "Port 3306 für MySQL"
-      description: "Port 3306"
-      required: true
-      default: "3306"
-      type: "int"
-
     - variable: "PORT9987"
       label: "Port 9987 für TS"
       description: "Port 9987"
@@ -67,4 +27,4 @@ catalog:
       default: "30033"
       type: "int"
 
-labsdb:
+teamspeak:
