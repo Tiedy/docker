@@ -6,8 +6,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
-    #  - MYSQL_USER=${DB_USER}
-    #  - MYSQL_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     ports:
       - ${PORT3306}:3306
     networks:
@@ -19,8 +19,8 @@ services:
     environment:
       - TS3_MARIADB_DB=${DB_NAME}
       - TS3_MARIADB_USER=${DB_USER}
-      - TS3_MARIADB_PASS=${DB_ROOT_PASSWORD}
-    #  - TS3_MARIADB_HOST=${DB_HOST}
+      - TS3_MARIADB_PASS=${DB_PASSWORD}
+      - TS3_MARIADB_HOST=${DB_HOST}
       - TS3_MARIADB_PORT=${DB_PORT}
     ports:
       - ${PORT9987}:9987/udp
