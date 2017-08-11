@@ -36,7 +36,7 @@ catalog:
       label: "DB Host"
       description: "DB Host"
       required: false
-      default: "mariadb"
+      default: "mysql"
       type: "string"
 
     - variable: "PORT3306"
