@@ -1,12 +1,12 @@
 version: '2'
 services:
   teamspeakdb:
-    image: mysql
+    image: mariadb
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${DB_NAME}
-      - MYSQL_USER=${DB_USER}
+      #- MYSQL_DATABASE=${DB_NAME}
+      #- MYSQL_USER=${DB_USER}
       #- MYSQL_PASSWORD=${DB_PASSWORD}
     ports:
       - ${PORT3306}:3306
