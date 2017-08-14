@@ -4,12 +4,26 @@ services:
     image: ${MYSQLIMAGE}
     environment:
       - MYSQL_ROOT_PASSWORD=${PASSWORD_DB}
-    dns: ${DNS_SERVER}
-    dns_search: ${DNS_SEARCH}
+
+        {{- if ne .Values.DNS_SERVER "none"}}
+      dns: ${DNS_SERVER}
+        {{- end}}
+
+        {{- if ne .Values.DNS_SERVER "none"}}
+      dns_search: ${DNS_SEARCH}
+        {{- end}}
+        
   guacd:
     image: guacamole/guacd
+
+      {{- if ne .Values.DNS_SERVER "none"}}
     dns: ${DNS_SERVER}
+      {{- end}}
+
+      {{- if ne .Values.DNS_SERVER "none"}}
     dns_search: ${DNS_SEARCH}
+      {{- end}}
+
   guacamole:
     image: guacamole/guacamole
 
@@ -32,5 +46,11 @@ services:
       - mysql:mysql
     ports:
       - ${GUACAMOLE_PORT}:8080
+
+      {{- if ne .Values.DNS_SERVER "none"}}
     dns: ${DNS_SERVER}
+      {{- end}}
+
+      {{- if ne .Values.DNS_SERVER "none"}}
     dns_search: ${DNS_SEARCH}
+      {{- end}}
