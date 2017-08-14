@@ -13,7 +13,7 @@ services:
   guacamole:
     image: guacamole/guacamole
 
-      {{- if eq .Values.DBIMAGE "mysql"}}
+      {{- if eq .Values.MYSQLIMAGE "mysql"}}
 
     environment:
       - MYSQL_DATABASE=${NAME_DB}
