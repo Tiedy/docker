@@ -18,7 +18,7 @@ services:
     environment:
       - MYSQL_DATABASE=${NAME_DB}
       - MYSQL_USER=${USER_DB}
-      - MYSQL_PASSWORD=${PASSWORD_DB}
+      - MYSQL_PASSWORD=${USERPASSWORD_DB}
       {{- else}}
 
     environment:
@@ -26,6 +26,7 @@ services:
       - MYSQL_USER=guacamole
       - MYSQL_PASSWORD=Password1
       {{- end}}
+
     links:
       - guacd:guacd
       - mysql:mysql

@@ -10,8 +10,7 @@ catalog:
       label: "MySQL Password"
       description: "Your mysql Password"
       required: true
-      default: "Password1"
-      type: "string"
+      type: "password"
 
     - variable: "NAME_DB"
       label: "Database Name"
@@ -26,6 +25,12 @@ catalog:
       required: true
       default: "guacamole"
       type: "string"
+
+    - variable: "USERPASSWORD_DB"
+      label: "Database User Password"
+      description: "Your Database User Password"
+      required: true
+      type: "password"
 
     - variable: "DNS_SERVER"
       label: "DNS Server"
@@ -51,7 +56,7 @@ catalog:
     - variable: "MYSQLIMAGE"
       label: "MySQL Image"
       description: "mysql is a new Default-mysql-Server. | tiedy/mysqlguac is a Guacamole-mysql-Server with Rancher default Parameters. "
-      options: 
+      options:
         - mysql
         - tiedy/mysqlguac
       required: true
