@@ -6,7 +6,7 @@ if you choose the MySQl Images "tiedy/mysqlguac " than will rancher ignore your 
 
 ### Options
 
-**Default Values are** (Image: tiedy/mysqlguac):
+**Default Values are:** (Image: tiedy/mysqlguac)
 * Database Name = guacamole_db
 * Database User = guacamole
 * Database User Password = Password1

@@ -30,6 +30,7 @@ catalog:
       label: "Database User Password"
       description: "Your Database User Password"
       required: true
+      default: "Password1"
       type: "password"
 
     - variable: "DNS_SERVER"
