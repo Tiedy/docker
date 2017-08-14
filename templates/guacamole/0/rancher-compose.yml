@@ -51,7 +51,7 @@ catalog:
     - variable: "MYSQLIMAGE"
       label: "MySQL Image"
       description: "mysql is a new Default-mysql-Server. | tiedy/mysqlguac is a Guacamole-mysql-Server with Rancher default Parameters. "
-      options: # List of options if using type of `enum`
+      options: 
         - mysql
         - tiedy/mysqlguac
       required: true

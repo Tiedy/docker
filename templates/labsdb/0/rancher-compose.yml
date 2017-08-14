@@ -9,7 +9,7 @@ catalog:
     - variable: "DBIMAGE"
       label: "DB Image"
       description: "Select some Image"
-      options: # List of options if using type of `enum`
+      options: 
         - oracle11-labsq-01
         - mssql2017-labsq-01
       required: true
