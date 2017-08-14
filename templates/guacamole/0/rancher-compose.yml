@@ -6,6 +6,17 @@ catalog:
   uuid: guacamole-1
   minimum_rancher_version: v1.2.0
   questions:
+
+    - variable: "MYSQLIMAGE"
+      label: "MySQL Image"
+      description: "mysql is a new Default-mysql-Server. | tiedy/mysqlguac is a Guacamole-mysql-Server with Rancher default Parameters. "
+      options:
+        - mysql
+        - tiedy/mysqlguac
+      required: true
+      default: "mysql"
+      type: "enum"
+
     - variable: "PASSWORD_DB"
       label: "MySQL Password"
       description: "Your mysql Password"
@@ -53,15 +64,5 @@ catalog:
       required: true
       default: "8080"
       type: "string"
-
-    - variable: "MYSQLIMAGE"
-      label: "MySQL Image"
-      description: "mysql is a new Default-mysql-Server. | tiedy/mysqlguac is a Guacamole-mysql-Server with Rancher default Parameters. "
-      options:
-        - mysql
-        - tiedy/mysqlguac
-      required: true
-      default: "mysql"
-      type: "enum"
 
 guacamole:
