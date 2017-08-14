@@ -12,10 +12,20 @@ services:
     dns_search: ${DNS_SEARCH}
   guacamole:
     image: guacamole/guacamole
+
+      {{- if eq .Values.DBIMAGE "mysql"}}
+
     environment:
       - MYSQL_DATABASE=${NAME_DB}
       - MYSQL_USER=${USER_DB}
       - MYSQL_PASSWORD=${PASSWORD_DB}
+      {{- else}}
+
+    environment:
+      - MYSQL_DATABASE=guacamole_db
+      - MYSQL_USER=guacamole
+      - MYSQL_PASSWORD=Password1
+      {{- end}}
     links:
       - guacd:guacd
       - mysql:mysql
