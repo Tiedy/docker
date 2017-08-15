@@ -1,11 +1,11 @@
 version: '2'
 catalog:
-  #name: "Teamspeak"
-  #version: "v1.0"
-  #description: "TS3 mit DB"
-  #uuid: teamspeak-1
-  #minimum_rancher_version: v1.2.0
-  #questions:
+  name: "Teamspeak"
+  version: "v1.0"
+  description: "TS3 mit DB"
+  uuid: teamspeak-1
+  minimum_rancher_version: v1.2.0
+  questions:
     - variable: "PORT9987"
       label: "Port 9987 für TS"
       description: "Port 9987"
