@@ -7,5 +7,6 @@ services:
       - ${PORT9987}:9987/udp
       - ${PORT10011}:10011
       - ${PORT30033}:30033
+      - ${PORT41144}:41144
     volumes:
       - /data/teamspeak:/data

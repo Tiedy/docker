@@ -27,4 +27,13 @@ catalog:
       default: "30033"
       type: "int"
 
+    - variable: "PORT41144"
+      label: "Port 41144 für TS"
+      description: "Port 41144"
+      required: true
+      default: "41144"
+      type: "int"
+
+
+
 teamspeak:
