@@ -12,7 +12,7 @@ services:
         {{- if ne .Values.DNS_SERVER "none"}}
       dns_search: ${DNS_SEARCH}
         {{- end}}
-        
+
   guacd:
     image: guacamole/guacd
 
