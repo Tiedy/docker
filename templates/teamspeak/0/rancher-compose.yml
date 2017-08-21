@@ -7,19 +7,19 @@ catalog:
   minimum_rancher_version: v1.2.0
   questions:
 
-    - variable: "SERVERPATH"
-      label: "Shared Folder Path"
-      description: "Server Location Path (chown -R 503:503)"
-      required: true
-      default: "/data/teamspeak"
-      type: "string"
-
     - variable: "SERVERPATHBOOLEAN"
       label: "Shared Folder"
       description: "Shared folder"
       required: true
       default: true
       type: "boolean"
+
+    - variable: "SERVERPATH"
+      label: "Shared Folder Path"
+      description: "Server Location Path (chown -R 503:503)"
+      required: true
+      default: "/data/teamspeak"
+      type: "string"
 
     - variable: "PORT9987"
       label: "Port 9987 für TS"
