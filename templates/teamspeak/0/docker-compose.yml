@@ -9,4 +9,4 @@ services:
       - ${PORT30033}:30033
       - ${PORT41144}:41144
     volumes:
-      - /data/teamspeak:/data
+      - ${SERVERPATH}:/data
