@@ -14,6 +14,13 @@ catalog:
       default: "/data/teamspeak"
       type: "string"
 
+    - variable: "SERVERPATHBOOLEAN"
+      label: "Shared Folder"
+      description: "Shared folder"
+      required: true
+      default: true
+      type: "boolean"
+
     - variable: "PORT9987"
       label: "Port 9987 für TS"
       description: "Port 9987"

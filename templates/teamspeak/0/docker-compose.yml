@@ -8,5 +8,8 @@ services:
       - ${PORT10011}:10011
       - ${PORT30033}:30033
       - ${PORT41144}:41144
+
+      {{- if eq .Values.SERVERPATHBOOLEAN true}}
     volumes:
       - ${SERVERPATH}:/data
+      {{- end}}
