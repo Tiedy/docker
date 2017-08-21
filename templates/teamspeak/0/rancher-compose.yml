@@ -8,7 +8,7 @@ catalog:
   questions:
 
     - variable: "SERVERPATH"
-      label: "Server Path"
+      label: "Shared Folder Path"
       description: "Server Location Path (chown -R 503:503)"
       required: true
       default: "/data/teamspeak"
